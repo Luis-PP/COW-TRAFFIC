@@ -7,7 +7,7 @@
 
 <h3 align="center">
 
-  ![](robot_helping.gif)
+  ![](COW-TRAFFIC.gif)
 
 </h3>
 

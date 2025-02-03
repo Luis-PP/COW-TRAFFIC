@@ -14,22 +14,24 @@
 #include <map>
 #include <boost/algorithm/clamp.hpp>
 
+//Random numbers
 std::vector<std::vector<float>> TRANSITION_MATRIX = {
-    {0.10f, 0.30f, 0.19f, 0.05f, 0.36f}, // Cubicle
-    {0.27f, 0.01f, 0.43f, 0.20f, 0.09f}, // Milker
-    {0.75f, 0.01f, 0.03f, 0.05f, 0.16f}, // Feeder
-    {0.50f, 0.01f, 0.35f, 0.03f, 0.11f}, // Concentrate
-    {0.30f, 0.20f, 0.30f, 0.15f, 0.05f}, // Drinker
+    {0.33f, 0.29f, 0.04f, 0.45f, 0.94f}, // Cubicle
+    {0.16f, 0.59f, 0.28f, 0.01f, 0.68f}, // Milker
+    {0.51f, 0.48f, 0.33f, 0.69f, 0.17f}, // Feeder
+    {0.29f, 0.28f, 0.11f, 0.98f, 0.79f}, // Concentrate
+    {0.73f, 0.50f, 0.73f, 0.50f, 0.73f}, // Drinker
 };
 
 int ACTIVITY_FACTOR = 60;
 
+// Random numbers
 std::vector<int> ACTIVITY_DURATION = {
-    int(70 * ACTIVITY_FACTOR),
-    int(8 * ACTIVITY_FACTOR),
-    int(36.5 * ACTIVITY_FACTOR),
-    int(9.74 * ACTIVITY_FACTOR),
-    int(4.5 * ACTIVITY_FACTOR),
+    int(88 * ACTIVITY_FACTOR),
+    int(61 * ACTIVITY_FACTOR),
+    int(33 * ACTIVITY_FACTOR),
+    int(38 * ACTIVITY_FACTOR),
+    int(47 * ACTIVITY_FACTOR),
 };
 
 Cow::Cow()
